@@ -40,12 +40,9 @@ namespace FlyBy
         /// </summary>
         private void animateButterfly(object sender, EventArgs e)
         {
-            if (count != 8)
-            {
-                horseyPictureBox.Image = images[count];
-                count++;
-            }
-            else
+            horseyPictureBox.Image = images[count];
+            count++;
+            if(count == MAX)
             {
                 count = 0;
             }
