@@ -36,8 +36,8 @@ namespace FlyBy
             this.quitButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dateLabel = new System.Windows.Forms.Label();
             this.timeLabel = new System.Windows.Forms.Label();
+            this.dateLabel = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.horseyPictureBox)).BeginInit();
             this.panel1.SuspendLayout();
@@ -97,23 +97,23 @@ namespace FlyBy
             this.panel1.Size = new System.Drawing.Size(142, 87);
             this.panel1.TabIndex = 4;
             // 
-            // dateLabel
-            // 
-            this.dateLabel.AutoSize = true;
-            this.dateLabel.Location = new System.Drawing.Point(15, 16);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(46, 17);
-            this.dateLabel.TabIndex = 0;
-            this.dateLabel.Text = "label1";
-            // 
             // timeLabel
             // 
             this.timeLabel.AutoSize = true;
             this.timeLabel.Location = new System.Drawing.Point(15, 52);
             this.timeLabel.Name = "timeLabel";
-            this.timeLabel.Size = new System.Drawing.Size(46, 17);
+            this.timeLabel.Size = new System.Drawing.Size(69, 17);
             this.timeLabel.TabIndex = 1;
-            this.timeLabel.Text = "label2";
+            this.timeLabel.Text = "timeLabel";
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Location = new System.Drawing.Point(15, 16);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(71, 17);
+            this.dateLabel.TabIndex = 0;
+            this.dateLabel.Text = "dateLabel";
             // 
             // timer2
             // 
