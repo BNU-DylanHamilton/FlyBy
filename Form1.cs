@@ -60,5 +60,11 @@ namespace FlyBy
         {
             timer1.Enabled = false;
         }
+
+        private void checkTime(object sender, EventArgs e)
+        {
+            dateLabel.Text = DateTime.Now.ToLongDateString(); //pick up date and convert
+            timeLabel.Text = DateTime.Now.ToLongTimeString(); //pick up time and convert
+        }
     }
 }

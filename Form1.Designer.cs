@@ -35,7 +35,12 @@ namespace FlyBy
             this.stopButton = new System.Windows.Forms.Button();
             this.quitButton = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateLabel = new System.Windows.Forms.Label();
+            this.timeLabel = new System.Windows.Forms.Label();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.horseyPictureBox)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // horseyPictureBox
@@ -82,12 +87,46 @@ namespace FlyBy
             // 
             this.timer1.Tick += new System.EventHandler(this.animateButterfly);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.timeLabel);
+            this.panel1.Controls.Add(this.dateLabel);
+            this.panel1.Location = new System.Drawing.Point(410, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(142, 87);
+            this.panel1.TabIndex = 4;
+            // 
+            // dateLabel
+            // 
+            this.dateLabel.AutoSize = true;
+            this.dateLabel.Location = new System.Drawing.Point(15, 16);
+            this.dateLabel.Name = "dateLabel";
+            this.dateLabel.Size = new System.Drawing.Size(46, 17);
+            this.dateLabel.TabIndex = 0;
+            this.dateLabel.Text = "label1";
+            // 
+            // timeLabel
+            // 
+            this.timeLabel.AutoSize = true;
+            this.timeLabel.Location = new System.Drawing.Point(15, 52);
+            this.timeLabel.Name = "timeLabel";
+            this.timeLabel.Size = new System.Drawing.Size(46, 17);
+            this.timeLabel.TabIndex = 1;
+            this.timeLabel.Text = "label2";
+            // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Tick += new System.EventHandler(this.checkTime);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(566, 356);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.quitButton);
             this.Controls.Add(this.stopButton);
             this.Controls.Add(this.startButton);
@@ -97,6 +136,8 @@ namespace FlyBy
             this.Text = "Simple Animation";
             this.Load += new System.EventHandler(this.loadForm);
             ((System.ComponentModel.ISupportInitialize)(this.horseyPictureBox)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -108,6 +149,10 @@ namespace FlyBy
         private System.Windows.Forms.Button stopButton;
         private System.Windows.Forms.Button quitButton;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label timeLabel;
+        private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
